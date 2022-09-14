@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableOpacity, Button } from 'react-native';
 import { TailwindProvider } from 'tailwindcss-react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -24,7 +24,7 @@ export default function App() {
                   "tabBarInactiveTintColor": '#fff',
                   "tabBarStyle": [
                     {
-                      "backgroundColor":"#00bfff",
+                      "backgroundColor":"#30a4fc",
                     },
                     null
                   ],
@@ -42,7 +42,7 @@ export default function App() {
               color: '#fff'
             },
             headerStyle: {
-              backgroundColor: '#00bfff',
+              backgroundColor: '#30a4fc',
             }       
                     }} />
 
@@ -59,25 +59,32 @@ export default function App() {
               color: '#fff'
             },
             headerStyle: {
-              backgroundColor: '#00bfff',
+              backgroundColor: '#30a4fc',
             }       
                     }}
           />
 
           <Tab.Screen name="Carteira de Condutor" component={WalletScreen} 
           options={{
-            
+            headerRight: () => (
+              <TouchableOpacity
+                onPress={() => alert('Testecoco!')}
+              ><Text style={{fontSize: 25, color: "#fff", right: 15, top: -2}}>+</Text></TouchableOpacity>
+            ),
            
             tabBarIcon: ({focused}) => (
               <Image style={{width: 25, height: 25}} source={focused ? require("./imgs/IconTabBarDriverWaller.png") : require("./imgs/IconTabBarDriverWaller.png")}/>
             ), 
             headerTitleStyle: {
-              color: '#fff'
+              color: '#fff',
+
             },
+
             headerStyle: {
-              backgroundColor: '#00bfff',
+              backgroundColor: '#30a4fc',
+
             }       
-                    }}
+            }}
           />
           
 
@@ -93,7 +100,7 @@ export default function App() {
               color: '#fff'
             },
             headerStyle: {
-              backgroundColor: '#00bfff',
+              backgroundColor: '#30a4fc',
             }       
                     }}
           
@@ -110,7 +117,7 @@ export default function App() {
               color: '#fff'
             },
             headerStyle: {
-              backgroundColor: '#00bfff',
+              backgroundColor: '#30a4fc',
             }       
                     }}
             />

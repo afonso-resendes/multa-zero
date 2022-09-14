@@ -13,7 +13,7 @@ const ShareScreen = () => {
         Quanto mais referral codes partilhares mais probabilidades tens de ter estes descontos.
       </Text>
       <View style={{width: "100%", borderBottomWidth: 1, borderBottomColor: "#8c8c8c", }}></View>
-      <Image style={{width: 30, height: 30, marginTop: -15, alignSelf: "center", bottom: 0, paddingBottom: 30}} source={require(".././imgs/IconDiscount.png")} />
+      <View style={{backgroundColor: "#fff", width: 35, height: 35, borderRadius: 100,  marginTop:-15, alignSelf: "center", }}><Image style={{position: "absolute", width: 30,  height: 30, top: 2.5, justifyContent: "center", alignSelf:"center", bottom: 0, paddingBottom: 30}} source={require(".././imgs/IconDiscount.png")} /></View>
     </View>
 
     <View style={{marginLeft: 15, marginRight: 15}}>
@@ -40,12 +40,12 @@ const ShareScreen = () => {
     </View>
 
     <View style={{alignSelf: "center", backgroundColor: "#e8e8e9", flexDirection: "row", marginTop: 30, padding: 10, borderRadius: 25}}>
-      <Image style={{width: 18, height: 18, justifyContent: "center", marginRight: 10}} source={require(".././imgs/IconTabBarShare.png")} />
-      <Text style={{color: "#00bfff"}}>Código Referral: TESTE1234</Text>
+      <Image style={{width: 18, height: 18, justifyContent: "center", marginRight: 10,}} source={require(".././imgs/IconTabBarShare.png")} />
+      <Text style={{color: "#30a4fc"}}>Código Referral: TESTE1234</Text>
     </View>
 
-    <LinearGradient style={{alignSelf: "center", marginTop: 15, width: "80%", bottom: 0, borderRadius: 35}} start={{x: 0, y: 0 }} end={{x: 1, y: 1}} colors={['#00bfff', 'blue']}>
-        <TouchableOpacity style={{padding: 10,}}><Text style={{color: "#fff", textAlign: "center"}}>Começar Aqui</Text></TouchableOpacity>
+    <LinearGradient style={{alignSelf: "center", marginTop: 15, marginBottom: 40, width: "80%", bottom: 0, borderRadius: 35}} start={{x: 0, y: 0 }} end={{x: 1, y: 1}} colors={['#30a4fc', '#2084c4']}>
+        <TouchableOpacity style={{padding: 10,}}><Text style={{color: "#fff", textAlign: "center"}}>Convidar Amigos</Text></TouchableOpacity>
       </LinearGradient>
     
     </ScrollView>

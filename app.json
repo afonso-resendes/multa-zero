@@ -28,6 +28,7 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "5 menus copiados falta mudar as fontes de letra"
   }
 }

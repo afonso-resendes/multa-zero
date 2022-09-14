@@ -1,14 +1,31 @@
-import { View, Text, TouchableOpacity } from 'react-native'
+import { View, Text, TouchableOpacity, Image } from 'react-native'
 import React from 'react'
 
+
+
 const HistoricScreen = () => {
+
+  
+  
   return (
-    <View>
-      <TouchableOpacity style={{borderBottomColor: "#e8e8e9", paddingLeft: 15, borderBottomWidth: 1, flexDirection: "row", padding: 10}}><Text style={{color: "#8c8c8c"}}>Registo Individual de Condutor</Text></TouchableOpacity>
-      <TouchableOpacity style={{borderBottomColor: "#e8e8e9", paddingLeft: 15, borderBottomWidth: 1, flexDirection: "row", padding: 10}}><Text style={{color: "#8c8c8c"}}>Processos</Text></TouchableOpacity>
-      <TouchableOpacity style={{borderBottomColor: "#e8e8e9", paddingLeft: 15, borderBottomWidth: 1, flexDirection: "row", padding: 10}}><Text style={{color: "#8c8c8c"}}>Notificações</Text></TouchableOpacity>
-      <TouchableOpacity style={{borderBottomColor: "#e8e8e9", paddingLeft: 15, borderBottomWidth: 1, flexDirection: "row", padding: 10}}><Text style={{color: "#8c8c8c"}}>Reuniões</Text></TouchableOpacity>
-    </View>
+    <View style={{marginLeft: 15, marginRight: 15}}>
+      <TouchableOpacity style={{flexDirection: "row", justifyContent: "space-between", paddingTop: 10, paddingBottom: 10, borderBottomWidth: 1, borderBottomColor: "#e8e8e9"}}>
+        <Text style={{color: "#8c8c8c"}}>Registo Individual de Condutor</Text>
+        <Image style={{justifyContent: "flex-end", width: 15, height: 15}} source={require(".././imgs/IconCrumbsArrow.png")}/>
+      </TouchableOpacity>
+      <TouchableOpacity style={{flexDirection: "row", justifyContent: "space-between", paddingTop: 10, paddingBottom: 10, borderBottomWidth: 1, borderBottomColor: "#e8e8e9"}}>
+        <Text style={{color: "#8c8c8c"}}>Processos</Text>
+        <Image style={{justifyContent: "flex-end", width: 15, height: 15}} source={require(".././imgs/IconCrumbsArrow.png")}/>
+      </TouchableOpacity>
+      <TouchableOpacity style={{flexDirection: "row", justifyContent: "space-between", paddingTop: 10, paddingBottom: 10, borderBottomWidth: 1, borderBottomColor: "#e8e8e9"}}>
+        <Text style={{color: "#8c8c8c"}}>Notificações</Text>
+        <Image style={{justifyContent: "flex-end", width: 15, height: 15}} source={require(".././imgs/IconCrumbsArrow.png")}/>
+      </TouchableOpacity>
+      <TouchableOpacity style={{flexDirection: "row", justifyContent: "space-between", paddingTop: 10, paddingBottom: 10, borderBottomWidth: 1, borderBottomColor: "#e8e8e9"}}>
+        <Text style={{color: "#8c8c8c"}}>Reuniões</Text>
+        <Image style={{justifyContent: "flex-end", width: 15, height: 15}} source={require(".././imgs/IconCrumbsArrow.png")}/>
+      </TouchableOpacity>
+      </View>
   )
 }
 
