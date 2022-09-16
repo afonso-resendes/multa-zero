@@ -13,7 +13,7 @@ const ShareScreen = () => {
         Quanto mais referral codes partilhares mais probabilidades tens de ter estes descontos.
       </Text>
       <View style={{width: "100%", borderBottomWidth: 1, borderBottomColor: "#8c8c8c", }}></View>
-      <View style={{backgroundColor: "#fff", width: 35, height: 35, borderRadius: 100,  marginTop:-15, alignSelf: "center", }}><Image style={{position: "absolute", width: 30,  height: 30, top: 2.5, justifyContent: "center", alignSelf:"center", bottom: 0, paddingBottom: 30}} source={require(".././imgs/IconDiscount.png")} /></View>
+      <View style={{backgroundColor: "#fff", width: 35, height: 35, borderRadius: 100,  marginTop:-15, alignSelf: "center", }}><Image style={{position: "absolute", width: 30,  height: 30, top: 2.5, justifyContent: "center", alignSelf:"center", bottom: 0, paddingBottom: 30}} source={require("../../imgs/IconDiscount.png")} /></View>
     </View>
 
     <View style={{marginLeft: 15, marginRight: 15}}>
@@ -35,12 +35,12 @@ const ShareScreen = () => {
       </View>
       <TouchableOpacity style={{flexDirection: "row", justifyContent: "space-between", paddingTop: 10, paddingBottom: 10, borderBottomWidth: 1, borderBottomColor: "#e8e8e9"}}>
         <Text>Ver convites</Text>
-        <Image style={{justifyContent: "flex-end", width: 15, height: 15}} source={require(".././imgs/IconCrumbsArrow.png")}/>
+        <Image style={{justifyContent: "flex-end", width: 15, height: 15}} source={require("../../imgs/IconCrumbsArrow.png")}/>
       </TouchableOpacity>
     </View>
 
     <View style={{alignSelf: "center", backgroundColor: "#e8e8e9", flexDirection: "row", marginTop: 30, padding: 10, borderRadius: 25}}>
-      <Image style={{width: 18, height: 18, justifyContent: "center", marginRight: 10,}} source={require(".././imgs/IconTabBarShare.png")} />
+      <Image style={{width: 18, height: 18, justifyContent: "center", marginRight: 10,}} source={require("../../imgs/IconTabBarShare.png")} />
       <Text style={{color: "#30a4fc"}}>Código Referral: TESTE1234</Text>
     </View>
 

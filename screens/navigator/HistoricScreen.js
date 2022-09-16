@@ -11,19 +11,19 @@ const HistoricScreen = () => {
     <View style={{marginLeft: 15, marginRight: 15}}>
       <TouchableOpacity style={{flexDirection: "row", justifyContent: "space-between", paddingTop: 10, paddingBottom: 10, borderBottomWidth: 1, borderBottomColor: "#e8e8e9"}}>
         <Text style={{color: "#8c8c8c"}}>Registo Individual de Condutor</Text>
-        <Image style={{justifyContent: "flex-end", width: 15, height: 15}} source={require(".././imgs/IconCrumbsArrow.png")}/>
+        <Image style={{justifyContent: "flex-end", width: 15, height: 15}} source={require("../../imgs/IconCrumbsArrow.png")}/>
       </TouchableOpacity>
       <TouchableOpacity style={{flexDirection: "row", justifyContent: "space-between", paddingTop: 10, paddingBottom: 10, borderBottomWidth: 1, borderBottomColor: "#e8e8e9"}}>
         <Text style={{color: "#8c8c8c"}}>Processos</Text>
-        <Image style={{justifyContent: "flex-end", width: 15, height: 15}} source={require(".././imgs/IconCrumbsArrow.png")}/>
+        <Image style={{justifyContent: "flex-end", width: 15, height: 15}} source={require("../../imgs/IconCrumbsArrow.png")}/>
       </TouchableOpacity>
       <TouchableOpacity style={{flexDirection: "row", justifyContent: "space-between", paddingTop: 10, paddingBottom: 10, borderBottomWidth: 1, borderBottomColor: "#e8e8e9"}}>
         <Text style={{color: "#8c8c8c"}}>Notificações</Text>
-        <Image style={{justifyContent: "flex-end", width: 15, height: 15}} source={require(".././imgs/IconCrumbsArrow.png")}/>
+        <Image style={{justifyContent: "flex-end", width: 15, height: 15}} source={require("../../imgs/IconCrumbsArrow.png")}/>
       </TouchableOpacity>
       <TouchableOpacity style={{flexDirection: "row", justifyContent: "space-between", paddingTop: 10, paddingBottom: 10, borderBottomWidth: 1, borderBottomColor: "#e8e8e9"}}>
         <Text style={{color: "#8c8c8c"}}>Reuniões</Text>
-        <Image style={{justifyContent: "flex-end", width: 15, height: 15}} source={require(".././imgs/IconCrumbsArrow.png")}/>
+        <Image style={{justifyContent: "flex-end", width: 15, height: 15}} source={require("../../imgs/IconCrumbsArrow.png")}/>
       </TouchableOpacity>
       </View>
   )

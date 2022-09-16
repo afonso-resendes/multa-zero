@@ -1,128 +1,41 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, TouchableOpacity, Button } from 'react-native';
-import { TailwindProvider } from 'tailwindcss-react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import StackNavigator from './StackNavigator';
 
-import HomeScreen from './screens/HomeScreen';
-import HistoricScreen from './screens/HistoricScreen';
-import WalletScreen from './screens/WalletScreen';
-import ShareScreen from './screens/ShareScreen';
-import SettingsScreen from './screens/SettingsScreen';
+import LoginScreen from './screens/auth/LoginScreen';
+import RegisterScreen from './screens/auth/RegisterScreen';
 
-const Tab = createBottomTabNavigator();
+import NewTrafficTicketScreen from './screens/NewTrafficTicketScreen';
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
+
+  const user = true
+  if (user == false) {
+    return (
+      <NavigationContainer>
+      <Stack.Navigator initialRouteName="StackNavigator" screenOptions={{
+    headerShown: false
+      }}>
+        <Stack.Screen name='Login' component={LoginScreen}/>
+        <Stack.Screen name='Register' component={RegisterScreen}/>
+        
+        
+      </Stack.Navigator>
+    </NavigationContainer>
+    )
+  }
   return (
     <NavigationContainer>
-      <TailwindProvider>
-                
-        <Tab.Navigator labeled={false}
-                screenOptions={{
-                  "tabBarShowLabel": true,
-                  "tabBarActiveTintColor": '#fff',
-                  "tabBarInactiveTintColor": '#fff',
-                  "tabBarStyle": [
-                    {
-                      "backgroundColor":"#30a4fc",
-                    },
-                    null
-                  ],
-                  
-                     
-                }}>                
-          <Tab.Screen name="Início" component={HomeScreen} 
-          options={{
-            
-           
-            tabBarIcon: ({focused}) => (
-              <Image style={{width: 25, height: 25}} source={focused ? require("./imgs/IconHome.png") : require("./imgs/IconHome.png")}/>
-            ), 
-            headerTitleStyle: {
-              color: '#fff'
-            },
-            headerStyle: {
-              backgroundColor: '#30a4fc',
-            }       
-                    }} />
-
-
-
-          <Tab.Screen name="Histórico" component={HistoricScreen} 
-          options={{
-            
-           
-            tabBarIcon: ({focused}) => (
-              <Image style={{width: 25, height: 25}} source={focused ? require("./imgs/IconTabBarHistory.png") : require("./imgs/IconTabBarHistory.png")}/>
-            ), 
-            headerTitleStyle: {
-              color: '#fff'
-            },
-            headerStyle: {
-              backgroundColor: '#30a4fc',
-            }       
-                    }}
-          />
-
-          <Tab.Screen name="Carteira de Condutor" component={WalletScreen} 
-          options={{
-            headerRight: () => (
-              <TouchableOpacity
-                onPress={() => alert('Testecoco!')}
-              ><Text style={{fontSize: 25, color: "#fff", right: 15, top: -2}}>+</Text></TouchableOpacity>
-            ),
-           
-            tabBarIcon: ({focused}) => (
-              <Image style={{width: 25, height: 25}} source={focused ? require("./imgs/IconTabBarDriverWaller.png") : require("./imgs/IconTabBarDriverWaller.png")}/>
-            ), 
-            headerTitleStyle: {
-              color: '#fff',
-
-            },
-
-            headerStyle: {
-              backgroundColor: '#30a4fc',
-
-            }       
-            }}
-          />
-          
-
-
-          <Tab.Screen name="Partilha" component={ShareScreen} 
-          options={{
-            
-           
-            tabBarIcon: ({focused}) => (
-              <Image style={{width: 25, height: 25}} source={focused ? require("./imgs/IconTabBarShare.png") : require("./imgs/IconTabBarShare.png")}/>
-            ), 
-            headerTitleStyle: {
-              color: '#fff'
-            },
-            headerStyle: {
-              backgroundColor: '#30a4fc',
-            }       
-                    }}
-          
-          />
-
-
-          <Tab.Screen name="Definições" component={SettingsScreen} options={{
-            
-           
-            tabBarIcon: ({focused}) => (
-              <Image style={{width: 25, height: 25}} source={focused ? require("./imgs/IconTabBarSettings.png") : require("./imgs/IconTabBarSettings.png")}/>
-            ), 
-            headerTitleStyle: {
-              color: '#fff'
-            },
-            headerStyle: {
-              backgroundColor: '#30a4fc',
-            }       
-                    }}
-            />
-        </Tab.Navigator>
-      </TailwindProvider>
+      <Stack.Navigator initialRouteName="StackNavigator" screenOptions={{
+    headerShown: false
+      }}>
+        <Stack.Screen name='StackNavigator' component={StackNavigator}/>
+        <Stack.Screen name='Nova Multa' component={NewTrafficTicketScreen} options={{presentation:"modal", headerShown: true}}/>
+        
+      </Stack.Navigator>
     </NavigationContainer>
     
   );

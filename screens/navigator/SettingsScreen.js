@@ -17,19 +17,19 @@ const SettingsScreen = () => {
         <Text>Código Referral</Text>
         <View style={{flexDirection: "row"}}>
           <Text style={{justifyContent: "flex-end", marginRight: 10, color: "#8c8c8c" }}>TESTE1234</Text>
-          <Image style={{justifyContent: "flex-end", width: 15, height: 15}} source={require(".././imgs/IconCrumbsArrow.png")}/>
+          <Image style={{justifyContent: "flex-end", width: 15, height: 15}} source={require("../../imgs/IconCrumbsArrow.png")}/>
         </View>
       </TouchableOpacity>
       <TouchableOpacity onPress={() => Linking.openURL(`tel:${999999999}`)} style={{borderBottomWidth: 1, borderBottomColor: "#e8e8e9", paddingTop: 10, paddingBottom: 10, flexDirection: "row", justifyContent: "space-between",}}>
         <Text>Telemóvel SOS</Text>
         <View style={{flexDirection: "row"}}>
           <Text style={{justifyContent: "flex-end", marginRight: 10, color: "#8c8c8c" }}>999999999</Text>
-          <Image style={{justifyContent: "flex-end", width: 15, height: 15}} source={require(".././imgs/IconCrumbsArrow.png")}/>
+          <Image style={{justifyContent: "flex-end", width: 15, height: 15}} source={require("../../imgs/IconCrumbsArrow.png")}/>
         </View>
       </TouchableOpacity>
       <TouchableOpacity onPress={() => Linking.openURL(`https://apps.apple.com/pt/app/multa-zero-mz/id1535432355`)} style={{borderBottomWidth: 1, borderBottomColor: "#e8e8e9", paddingTop: 10, paddingBottom: 10, flexDirection: "row", justifyContent: "space-between",}}>
         <Text>Classificar</Text>
-        <Image style={{justifyContent: "flex-end", width: 15, height: 15}} source={require(".././imgs/IconCrumbsArrow.png")}/>
+        <Image style={{justifyContent: "flex-end", width: 15, height: 15}} source={require("../../imgs/IconCrumbsArrow.png")}/>
       </TouchableOpacity>
       
       <View style={{borderBottomColor: "#000", borderBottomWidth: 1, borderBottomColor: "#e8e8e9", marginLeft: -15, marginRight: -15}}>
@@ -38,19 +38,19 @@ const SettingsScreen = () => {
       </View>
       <TouchableOpacity onPress={() => Linking.openURL(`https://www.dotdashmeredith.com`)} style={{borderBottomWidth: 1, borderBottomColor: "#e8e8e9", paddingTop: 10, paddingBottom: 10, flexDirection: "row", justifyContent: "space-between",}}>
         <Text>Sobre Multa Zero</Text>
-        <Image style={{justifyContent: "flex-end", width: 15, height: 15}} source={require(".././imgs/IconCrumbsArrow.png")}/>
+        <Image style={{justifyContent: "flex-end", width: 15, height: 15}} source={require("../../imgs/IconCrumbsArrow.png")}/>
       </TouchableOpacity>
       <TouchableOpacity onPress={() => Linking.openURL(`mailto:test@multazero.pt`)} style={{borderBottomWidth: 1, borderBottomColor: "#e8e8e9", paddingTop: 10, paddingBottom: 10, flexDirection: "row", justifyContent: "space-between",}}>
         <Text>Contacte-nos</Text>
-        <Image style={{justifyContent: "flex-end", width: 15, height: 15}} source={require(".././imgs/IconCrumbsArrow.png")}/>
+        <Image style={{justifyContent: "flex-end", width: 15, height: 15}} source={require("../../imgs/IconCrumbsArrow.png")}/>
       </TouchableOpacity>
       <TouchableOpacity onPress={() => Linking.openURL(`http://link.privacy.policy.com`)} style={{borderBottomWidth: 1, borderBottomColor: "#e8e8e9", paddingTop: 10, paddingBottom: 10, flexDirection: "row", justifyContent: "space-between",}}>
         <Text>Privacidade</Text>
-        <Image style={{justifyContent: "flex-end", width: 15, height: 15}} source={require(".././imgs/IconCrumbsArrow.png")}/>
+        <Image style={{justifyContent: "flex-end", width: 15, height: 15}} source={require("../../imgs/IconCrumbsArrow.png")}/>
       </TouchableOpacity>
       <TouchableOpacity onPress={() => Linking.openURL(`http://link.faqs.com`)} style={{borderBottomWidth: 1, borderBottomColor: "#e8e8e9", paddingTop: 10, paddingBottom: 10, flexDirection: "row", justifyContent: "space-between",}}>
         <Text>FAQs</Text>
-        <Image style={{justifyContent: "flex-end", width: 15, height: 15}} source={require(".././imgs/IconCrumbsArrow.png")}/>
+        <Image style={{justifyContent: "flex-end", width: 15, height: 15}} source={require("../../imgs/IconCrumbsArrow.png")}/>
       </TouchableOpacity>
 
       <View style={{borderBottomColor: "#000", borderBottomWidth: 1, borderBottomColor: "#e8e8e9", marginLeft: -15, marginRight: -15}}>
