@@ -1,11 +1,48 @@
-import { View, Text, TouchableOpacity, StatusBar } from 'react-native'
-import React, { useLayoutEffect } from 'react'
+import { View, Text, TouchableOpacity, Animated } from 'react-native'
+import React, { useLayoutEffect, useRef, useEffect, useState } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { LinearGradient } from 'expo-linear-gradient'; //instalar
 
-
 const HomeScreen = () => {
+
+  var [x, setX] = useState(1)
+  var [y, setY] = useState(1)
+  var [z, setZ] = useState(14)
+
+    var fadeAnim = useRef(new Animated.Value(x)).current  // Initial
+    var [primeiro, setPrimeiro] = useState("O que fazemos")
+    
+   
+    const f = () => {    
+        Animated.timing(
+
+          fadeAnim,
+          {
+            toValue: -x,
+            duration: 500,
+            useNativeDriver: true,
+            
+          },
+          setX(-x),
+          setY(-y)
+
+          
+        ).start();
+
+      j()
+    }
+
+    const j = () => {
+      if (x == -1) {
+        setPrimeiro("O que fazemos")
+        setZ(14)
+      } else {
+        setPrimeiro("Gestão de multas, em especial as de velocidade, álcool e telemóvel.")
+        setZ(10)
+        
+      }
+    }
     const navigation = useNavigation()
 
     useLayoutEffect(() => {
@@ -16,10 +53,9 @@ const HomeScreen = () => {
   return (
     <SafeAreaView style={{backgroundColor: "#fff", height: "150%", flex: 1}}>
       <View style={{flexDirection: "row", justifyContent: "center", marginBottom: 20}}>
-        
-        <TouchableOpacity style={{padding: 10, paddingBottom: 50, borderRadius: 15, paddingTop: 50, marginRight: 10, width: 160, backgroundColor: "#f6f6f6"}}>
-          <Text style={{textAlign: "center"}}>O que fazemos</Text>
-          <Text style={{position: "absolute", bottom: 10, right: 5}}>Ler +</Text>
+        <TouchableOpacity onPress={f} style={{padding: 10, height: 110, transform: [{scaleX: fadeAnim}], paddingBottom: 50, borderRadius: 15, paddingTop: 50, marginRight: 10, width: 160, backgroundColor: "#f6f6f6"}}>
+          <Text style={{textAlign: "center", height: 150, marginTop: -5, fontSize: z, transform: [{scaleX: x}]}}>{primeiro}</Text>
+          <Text style={{position: "absolute", bottom: 10, right: 5, opacity: y}}>Ler +</Text>
         </TouchableOpacity>
         <TouchableOpacity style={{padding: 10, paddingBottom: 50, borderRadius: 15, paddingTop: 50, marginLeft: 10, width: 160, backgroundColor: "#f6f6f6"}}>
           <Text style={{textAlign: "center"}}>Vantagens</Text>
