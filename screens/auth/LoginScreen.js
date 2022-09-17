@@ -44,7 +44,7 @@ const LoginScreen = () => {
       </View>
       <View style={{borderWidth: 0.5, borderColor: "#e8e8e9", marginTop: 10, zIndex: -1}}></View>
         <TouchableOpacity style={{bottom: 75, position: "absolute", alignContent: "center", width: "100%"}} onPress={() => navigation.navigate("Register")}><Text style={{color: "#000", textAlign: "center", fontSize: 13}}>Ainda não tem conta?</Text></TouchableOpacity>
-        <TouchableOpacity style={{bottom: 50, position: "absolute", alignContent: "center", width: "100%"}} onPress={() => navigation.navigate("Register")}><Text style={{color: "#30a4fc", textAlign: "center"}}>Criar uma nova conta</Text></TouchableOpacity>
+        <TouchableOpacity style={{bottom: 50, position: "absolute", alignContent: "center", width: "100%"}} onPress={() => navigation.navigate("Criar Conta")}><Text style={{color: "#30a4fc", textAlign: "center"}}>Criar uma nova conta</Text></TouchableOpacity>
     </SafeAreaView>
   )
 }

@@ -20,7 +20,7 @@ export default function App() {
     headerShown: false
       }}>
         <Stack.Screen name='Entrar' component={LoginScreen}/>
-        <Stack.Screen name='Register' component={RegisterScreen}/>
+        <Stack.Screen name='Criar Conta' component={RegisterScreen}/>
         
         
       </Stack.Navigator>
