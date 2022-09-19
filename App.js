@@ -6,7 +6,7 @@ import StackNavigator from './StackNavigator';
 import LoginScreen from './screens/auth/LoginScreen';
 import RegisterScreen from './screens/auth/RegisterScreen';
 
-import NewTrafficTicketScreen from './screens/NewTrafficTicketScreen';
+import NovaMatricula from './screens/NovaMatricula';
 
 const Stack = createNativeStackNavigator();
 
@@ -33,7 +33,7 @@ export default function App() {
     headerShown: false
       }}>
         <Stack.Screen name='StackNavigator' component={StackNavigator}/>
-        <Stack.Screen name='Nova Multa' component={NewTrafficTicketScreen} options={{presentation:"modal", headerShown: true}}/>
+        <Stack.Screen name='Nova Matricula' component={NovaMatricula} options={{presentation:"modal", headerShown: true}}/>
         
       </Stack.Navigator>
     </NavigationContainer>

@@ -79,7 +79,7 @@ const HomeScreen = () => {
       </View>
 
       <LinearGradient style={{alignSelf: "center", marginTop: "30%", width: 150, bottom: 0, borderRadius: 35}} start={{x: 0, y: 0 }} end={{x: 1, y: 1}} colors={['#30a4fc', '#2084c4']}>
-        <TouchableOpacity style={{padding: 10,}}><Text style={{color: "#fff", textAlign: "center"}} onPress={() => navigation.navigate("Nova Multa")}>Começar Aqui</Text></TouchableOpacity>
+        <TouchableOpacity style={{padding: 10,}}><Text style={{color: "#fff", textAlign: "center"}}>Começar Aqui</Text></TouchableOpacity>
       </LinearGradient>
       <Text style={{marginTop: 15, marginLeft: 15, marginRight: 15, textAlign: "center", color: "#8c8c8c"}}>Defenda-se! Não fique sem carta, não agrave os custos do seu seguro e não perca pontos.</Text>
     

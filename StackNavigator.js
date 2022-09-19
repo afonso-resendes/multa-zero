@@ -3,6 +3,8 @@ import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { StyleSheet, Text, View, Image, TouchableOpacity, Button } from 'react-native';
 import HomeScreen from './screens/navigator/HomeScreen';
+import { useNavigation } from '@react-navigation/native'
+
 import HistoricScreen from './screens/navigator/HistoricScreen';
 import WalletScreen from './screens/navigator/WalletScreen';
 import ShareScreen from './screens/navigator/ShareScreen';
@@ -11,6 +13,8 @@ import SettingsScreen from './screens/navigator/SettingsScreen';
 
 const Tab = createBottomTabNavigator();
 const StackNavigator = () => {
+const navigation = useNavigation()
+  
   return (
     <View style={{ flex: 1, backgroundColor: '#f2f2f2' }}>
      
@@ -61,7 +65,7 @@ const StackNavigator = () => {
                   options={{
                     headerRight: () => (
                       <TouchableOpacity
-                        onPress={() => alert('Testecoco!')}
+                      onPress={() => navigation.navigate("Nova Matricula")}
                       ><Text style={{fontSize: 25, color: "#fff", right: 15, top: -2}}>+</Text></TouchableOpacity>
                     ),
                    
