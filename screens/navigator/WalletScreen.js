@@ -8,7 +8,7 @@ const WalletScreen = () => {
       <Image style={{width: 120, height: 120, alignSelf: "center"}} source={require("../../imgs/IconTabBarDriverWaller.png")} />
       <Text style={{textAlign: "center", marginTop: 15, }}>Não tem registos na carteira de condutor.</Text>
       <View style={{borderBottomWidth: 1, borderBottomColor: "#e8e8e9"}}><Text style={{textAlign: "center", marginBottom: 15, marginTop: 8, fontSize: 12, color: "#8c8c8c"}}>Utilize o botão "+" para adicionar novo registo do veículo.</Text>
-</View>
+    </View>
     </View>
     </View>
   )
