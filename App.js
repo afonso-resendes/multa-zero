@@ -12,7 +12,7 @@ const Stack = createNativeStackNavigator();
 
 export default function App() {
 
-  const user = false
+  const user = true
   if (user == false) {
     return (
       <NavigationContainer>

@@ -8,7 +8,7 @@ const SettingsScreen = () => {
   const toggleSwitch2 = () => setIsEnabled2(previousState => !previousState);
 
   return (
-    <ScrollView>
+    <ScrollView style={{backgroundColor: "#fff"}}>
     <View style={{margin: 15}}>
       <View style={{borderBottomColor: "#000", borderBottomWidth: 1, borderBottomColor: "#e8e8e9", marginLeft: -15, marginRight: -15}}>
       <Text style={{fontSize: 18, marginTop: 25, paddingLeft: 15, marginBottom: 10}}>UTILIZADOR</Text>
