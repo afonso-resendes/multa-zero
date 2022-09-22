@@ -8,9 +8,11 @@ const HomeScreen = () => {
 
   var [x, setX] = useState(1)
   var [y, setY] = useState(1)
+  var [mT, setMT] = useState(-5)
   var [z, setZ] = useState(14)
 
     var fadeAnim = useRef(new Animated.Value(x)).current  // Initial
+    var lerMais = useRef(new Animated.Value(x)).current  // Initial
     var [primeiro, setPrimeiro] = useState("O que fazemos")
     
    
@@ -25,7 +27,6 @@ const HomeScreen = () => {
             
           },
           setX(-x),
-          setY(-y)
 
           
         ).start();
@@ -35,26 +36,38 @@ const HomeScreen = () => {
 
     const j = () => {
       if (x == -1) {
-        setPrimeiro("O que fazemos")
-        setZ(14)
+        setTimeout(() => {
+          setPrimeiro("O que fazemos")
+          setZ(14)
+          setY(1)
+          setMT(-5)
+        }, 250);
       } else {
-        setPrimeiro("Gestão de multas, em especial as de velocidade, álcool e telemóvel.")
-        setZ(10)
-        
+        setTimeout(() => {
+          setPrimeiro("Gestão de multas, em especial as de velocidade, álcool e telemóvel.")
+          setZ(11)
+          setY(0)
+          setMT(-15)
+        }, 250);
+          
       }
     }
     const navigation = useNavigation()
+
+ 
+
 
     useLayoutEffect(() => {
         navigation.setOptions({
             headerShown:true,
         });
     }, [])
+  
   return (
     <SafeAreaView style={{backgroundColor: "#fff", height: "150%", flex: 1}}>
       <View style={{flexDirection: "row", justifyContent: "center", marginBottom: 20}}>
         <TouchableOpacity onPress={f} style={{padding: 10, height: 110, transform: [{scaleX: fadeAnim}], paddingBottom: 50, borderRadius: 15, paddingTop: 50, marginRight: 10, width: 160, backgroundColor: "#f6f6f6"}}>
-          <Text style={{textAlign: "center", height: 150, marginTop: -5, fontSize: z, transform: [{scaleX: x}]}}>{primeiro}</Text>
+          <Animated.Text style={{textAlign: "center", height: 150, marginTop: mT, fontSize: z, transform: [{scaleX: fadeAnim}]}}>{primeiro}</Animated.Text>
           <Text style={{position: "absolute", bottom: 10, right: 5, opacity: y}}>Ler +</Text>
         </TouchableOpacity>
         <TouchableOpacity style={{padding: 10, paddingBottom: 50, borderRadius: 15, paddingTop: 50, marginLeft: 10, width: 160, backgroundColor: "#f6f6f6"}}>
