@@ -5,7 +5,7 @@ import React from 'react'
 
 const ShareScreen = () => {
   return (
-    <ScrollView>
+    <ScrollView style={{backgroundColor: "#fff"}}>
     <View style={{backgroundColor: "#e8e8e9", margin: 15, borderRadius: 15, padding: 10}}>
       <Text style={{textAlign: "center"}}>Como funciona?</Text>
       <Text style={{marginTop: 10}}>Partilha o teu referral code para fazer crescer a comunidade Multa Zero. Além disso, ganhas entre 5% a 50% de desconto no serviço que contratares por cada amigo que também solicitar os nossos serviços.
