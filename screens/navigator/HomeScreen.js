@@ -39,10 +39,7 @@ const HomeScreen = (props) => {
       if (x == -1) {
         setTimeout(() => {
           setPrimeiro("O que fazemos")
-<<<<<<< HEAD
           
-=======
->>>>>>> caf834add46feaa9045a3a8da12d64b97bf9b142
           setZ(14)
           setY(1)
           setMT(-5)
@@ -263,13 +260,8 @@ const HomeScreen = (props) => {
         </TouchableOpacity>
       </View>
 
-<<<<<<< HEAD
       <LinearGradient style={{alignSelf: "center", marginTop: "30%", width: 200, bottom: 0, borderRadius: 35}} start={{x: 0, y: 0 }} end={{x: 1, y: 1}} colors={['#30a4fc', '#2084c4']}>
         <TouchableOpacity style={{padding: 10}}><Text style={{color: "#fff", textAlign: "center"}}>Começar Aqui</Text></TouchableOpacity>
-=======
-      <LinearGradient style={{alignSelf: "center", marginTop: "30%", width: 150, bottom: 0, borderRadius: 35}} start={{x: 0, y: 0 }} end={{x: 1, y: 1}} colors={['#30a4fc', '#2084c4']}>
-        <TouchableOpacity style={{padding: 10,}}><Text style={{color: "#fff", textAlign: "center"}}>Começar Aqui</Text></TouchableOpacity>
->>>>>>> caf834add46feaa9045a3a8da12d64b97bf9b142
       </LinearGradient>
       <Text style={{marginTop: 15, marginLeft: 15, marginRight: 15, textAlign: "center", color: "#8c8c8c"}}>Defenda-se! Não fique sem carta, não agrave os custos do seu seguro e não perca pontos.</Text>
     

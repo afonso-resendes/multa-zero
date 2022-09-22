@@ -11,7 +11,7 @@ const WalletScreen = () => {
     </View>
     </View>
     </View>
-     </View>
+  
   )
 }
 
