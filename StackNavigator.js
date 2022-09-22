@@ -10,7 +10,7 @@ import SettingsScreen from './screens/navigator/SettingsScreen';
 
 
 const Tab = createBottomTabNavigator();
-const StackNavigator = () => {
+const StackNavigator = (props) => {
   return (
     <View style={{ flex: 1, backgroundColor: '#f2f2f2' }}>
      
@@ -61,7 +61,7 @@ const StackNavigator = () => {
                   options={{
                     headerRight: () => (
                       <TouchableOpacity
-                        onPress={() => alert('Testecoco!')}
+                        onPress={() => props.navigation.navigate("Adicionar Matricula")}
                       ><Text style={{fontSize: 25, color: "#fff", right: 15, top: -2}}>+</Text></TouchableOpacity>
                     ),
                    

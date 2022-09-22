@@ -8,7 +8,7 @@ const HistoricScreen = () => {
   
   
   return (
-    <View style={{marginLeft: 15, marginRight: 15}}>
+    <View style={{paddingLeft: 15, paddingRight: 15 ,flex:1,backgroundColor: "#fff"}}>
       <TouchableOpacity style={{flexDirection: "row", justifyContent: "space-between", paddingTop: 10, paddingBottom: 10, borderBottomWidth: 1, borderBottomColor: "#e8e8e9"}}>
         <Text style={{color: "#8c8c8c"}}>Registo Individual de Condutor</Text>
         <Image style={{justifyContent: "flex-end", width: 15, height: 15}} source={require("../../imgs/IconCrumbsArrow.png")}/>
