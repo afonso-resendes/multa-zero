@@ -65,7 +65,7 @@ const navigation = useNavigation()
                   options={{
                     headerRight: () => (
                       <TouchableOpacity
-                      onPress={() => navigation.navigate("Nova Matricula")}
+                      onPress={() => navigation.navigate("Adicionar Matricula")}
                       ><Text style={{fontSize: 25, color: "#fff", right: 15, top: -2}}>+</Text></TouchableOpacity>
                     ),
                    
